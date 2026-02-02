@@ -17,7 +17,11 @@ vim.opt.colorcolumn = "81"
 require("config.lazy")
 
 require'nvim-treesitter'.install { 
-'lua', 'javascript', 'php', 'awk', 'c', 'css', 'html', 'python', 'prolog' 
+'lua', 'javascript', 'php', 'awk', 'c', 'css', 'html', 'python', 'prolog',
+'vimdoc'
 }
 
-vim.cmd(":Neotree")
+vim.lsp.enable('phpactor')
+
+
+--vim.cmd(":Neotree")
