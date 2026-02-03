@@ -23,5 +23,5 @@ require'nvim-treesitter'.install {
 
 vim.lsp.enable('phpactor')
 
-
+vim.g.mapleader = " "
 --vim.cmd(":Neotree")
