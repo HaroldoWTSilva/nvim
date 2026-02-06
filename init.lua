@@ -18,10 +18,43 @@ require("config.lazy")
 
 require'nvim-treesitter'.install { 
 'lua', 'javascript', 'php', 'awk', 'c', 'css', 'html', 'python', 'prolog',
-'vimdoc'
+'vimdoc', 'markdown', 'markdown_inline', 'json', 'yaml'
 }
 
 vim.lsp.enable('phpactor')
 
 vim.g.mapleader = " "
---vim.cmd(":Neotree")
+vim.keymap.set("v", "<leader>y", '"+y', {
+    noremap = true,
+    silent = true,
+    desc = "Copiar seleção para clipboard"
+})
+
+vim.keymap.set("n", "<leader>t", function()
+    vim.cmd("Neotree toggle")
+end, {
+    silent = true,
+    desc = "Toggle Neo-tree"
+})
+
+vim.keymap.set("n", "<leader>cd", function()
+    vim.cmd("Copilot disable")
+end, {
+    silent = true,
+    desc = "Disable Copilot"
+})
+
+vim.keymap.set("n", "<leader>ce", function()
+    vim.cmd("Copilot enable")
+end, {
+    silent = true,
+    desc = "Enable Copilot"
+})
+
+vim.keymap.set("n", "<leader>cp", function()
+    vim.cmd("Copilot panel")
+end, {
+    silent = true,
+    desc = "Abre o painel do Copilot"
+})
+
