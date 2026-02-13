@@ -14,6 +14,8 @@ vim.opt.textwidth = 80
 vim.opt.formatoptions:append("t")
 vim.opt.colorcolumn = "81"
 
+vim.opt.clipboard = "unnamedplus"
+
 require("config.lazy")
 
 require'nvim-treesitter'.install { 
