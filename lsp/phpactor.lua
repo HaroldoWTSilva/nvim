@@ -8,3 +8,4 @@ return {
         ["language_server_psalm.enabled"] = false,
     }
 }
+
