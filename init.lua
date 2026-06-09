@@ -25,6 +25,7 @@ require'nvim-treesitter'.install {
 
 vim.lsp.enable('phpactor')
 vim.lsp.enable('lua-ls')
+vim.lsp.enable('pyright')
 
 vim.g.mapleader = " "
 vim.keymap.set("v", "<leader>y", '"+y', {

@@ -7,7 +7,11 @@ Keeping my configs coherent among different development machines.
 Install [tree-sitter-cli](https://github.com/tree-sitter/tree-sitter/releases) 
 and [hack nerd font](https://www.nerdfonts.com/font-downloads).
 
-I'm using phpactor as PHP LSP and lua-language-server as Lua LSP.
+Required LSPs:
+
+- phpactor
+- lua-language-server
+- pyright
 
 Then
 
